@@ -1,0 +1,111 @@
+
+Nya.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm1
+  rotate: false
+  xy: 631, 488
+  size: 184, 173
+  orig: 184, 173
+  offset: 0, 0
+  index: -1
+arm2
+  rotate: false
+  xy: 434, 526
+  size: 195, 153
+  orig: 195, 153
+  offset: 0, 0
+  index: -1
+calf1
+  rotate: false
+  xy: 237, 326
+  size: 149, 277
+  orig: 149, 277
+  offset: 0, 0
+  index: -1
+calf2
+  rotate: false
+  xy: 2, 2
+  size: 136, 294
+  orig: 136, 294
+  offset: 0, 0
+  index: -1
+chest
+  rotate: false
+  xy: 434, 681
+  size: 203, 321
+  orig: 203, 321
+  offset: 0, 0
+  index: -1
+foot1
+  rotate: false
+  xy: 639, 832
+  size: 255, 170
+  orig: 255, 170
+  offset: 0, 0
+  index: -1
+foot2
+  rotate: false
+  xy: 639, 663
+  size: 258, 167
+  orig: 258, 167
+  offset: 0, 0
+  index: -1
+forearm1
+  rotate: false
+  xy: 817, 515
+  size: 93, 146
+  orig: 93, 146
+  offset: 0, 0
+  index: -1
+forearm2
+  rotate: true
+  xy: 896, 858
+  size: 144, 112
+  orig: 144, 112
+  offset: 0, 0
+  index: -1
+hand1
+  rotate: false
+  xy: 899, 717
+  size: 109, 139
+  orig: 109, 139
+  offset: 0, 0
+  index: -1
+hand2
+  rotate: false
+  xy: 388, 412
+  size: 138, 112
+  orig: 138, 112
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 605
+  size: 430, 397
+  orig: 430, 397
+  offset: 0, 0
+  index: -1
+jetpack
+  rotate: false
+  xy: 2, 298
+  size: 233, 305
+  orig: 233, 305
+  offset: 0, 0
+  index: -1
+leg1
+  rotate: false
+  xy: 274, 88
+  size: 122, 236
+  orig: 122, 236
+  offset: 0, 0
+  index: -1
+leg2
+  rotate: false
+  xy: 140, 36
+  size: 132, 260
+  orig: 132, 260
+  offset: 0, 0
+  index: -1
