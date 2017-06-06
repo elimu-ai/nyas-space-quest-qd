@@ -2,7 +2,6 @@
 
 //#include "LoadingScene.h"
 #include "MenugScene.h"
-#include "HelloWorldScene.h"
 #include <random>
 #include "SimpleAudioEngine.h"
 
