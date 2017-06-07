@@ -117,7 +117,7 @@ void Menug::setupButtons()
 	buttonPlayA->setScale(0.9f);
 	buttonPlayA->setPosition(Vec2(origin.x + 3 * visibleSize.width / 4 - 30, origin.y + visibleSize.height / 2));
 
-	Planet * planetA = Planet::create(1);
+	Planet * planetA = Planet::create(2);
 	planetA->setPosition(Vec2(origin.x + 3 * visibleSize.width / 4 + 60, origin.y + visibleSize.height / 2));
 
 	auto buttonPlayB = ui::Button::create("buttonPlay.png", "buttonPlaySel.png", "buttonPlay.png", ui::Widget::TextureResType::PLIST);
@@ -140,7 +140,7 @@ void Menug::setupButtons()
 	buttonPlayB->setScale(0.9f);
 	buttonPlayB->setPosition(Vec2(origin.x + 3 * visibleSize.width / 4 - 30, origin.y + visibleSize.height / 2 - 120));
 
-	Planet * planetB = Planet::create(3);
+	Planet * planetB = Planet::create(0);
 	planetB->setPosition(Vec2(origin.x + 3 * visibleSize.width / 4 + 60, origin.y + visibleSize.height / 2 - 120));
 	planetB->setColor(Color3B::GRAY);
 

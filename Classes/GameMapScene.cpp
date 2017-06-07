@@ -39,6 +39,8 @@ bool GameMap::init()
 	cache->removeUnusedSpriteFrames();
 	cache->addSpriteFramesWithFile("common.plist");
 
+	//numberDisplayVector = Vector<NumberDisplay*>();
+	//numberTestVector = Vector<NumberTest*>();
 	coinVector = Vector<Coin*>();
 	isCameraActive = true;
 
@@ -187,7 +189,7 @@ void GameMap::loadMap()
 		sprite->setPosition(Vec2(x, y));
 		gameplayNode->addChild(sprite);
 	}
-
+	/*
 	//load Number Displays
 	auto numberDisplays = tiledMap->getObjectGroup("numberDisplays")->getObjects();
 	if (!numberDisplays.empty())
@@ -197,13 +199,12 @@ void GameMap::loadMap()
 			auto tipMap = tip.asValueMap();
 			int x = tipMap["x"].asInt();
 			int y = tipMap["y"].asInt();
-			/*
 			auto object = NumberDisplay::create(RandomHelper::random_int(1, 10), numberDisplayBG);
 			object->setAnchorPoint(Vec2::ZERO);
 			object->setPosition(Vec2(x, y));
 			numberDisplayVector.pushBack(object);
 			gameplayNode->addChild(object);
-			object->setTag(totalTips);*/
+			object->setTag(totalTips);
 			totalTips++;
 		}
 	}
@@ -217,16 +218,15 @@ void GameMap::loadMap()
 			auto tipMap = tip.asValueMap();
 			int x = tipMap["x"].asInt();
 			int y = tipMap["y"].asInt();
-			/*
 			auto object = NumberTest::create(RandomHelper::random_int(1, 10), numberDisplayBG);
 			object->setAnchorPoint(Vec2::ZERO);
 			object->setPosition(Vec2(x, y));
 			numberTestVector.pushBack(object);
 			gameplayNode->addChild(object);
-			object->setTag(totalTips);*/
+			object->setTag(totalTips);
 			totalTips++;
 		}
-	}
+	}*/
 
 	//load coins
 	auto coins = tiledMap->getObjectGroup("coins")->getObjects();
@@ -388,8 +388,7 @@ void GameMap::update(float dt)
 		this->centerCamera(player->getPosition());
 	}
 	this->parallaxMove();
-
-	/*
+/*
 	//numberDisplays
 	for (NumberDisplay * numberDisplay : numberDisplayVector)
 	{
@@ -440,7 +439,6 @@ void GameMap::update(float dt)
 			numberTest->update(false);
 		}
 	}*/
-
 	//coins
 	for (Coin * coin : coinVector)
 	{
