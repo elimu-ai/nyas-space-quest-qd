@@ -15,9 +15,9 @@
                 <key>spriteSourceSize</key>
                 <string>{420,174}</string>
                 <key>textureRect</key>
-                <string>{{8,1280},{396,160}}</string>
+                <string>{{788,688},{396,160}}</string>
                 <key>textureRotated</key>
-                <false/>
+                <true/>
             </dict>
             <key>buttonPlaySel.png</key>
             <dict>
@@ -30,9 +30,9 @@
                 <key>spriteSourceSize</key>
                 <string>{420,174}</string>
                 <key>textureRect</key>
-                <string>{{612,1240},{404,168}}</string>
+                <string>{{612,688},{404,168}}</string>
                 <key>textureRotated</key>
-                <false/>
+                <true/>
             </dict>
             <key>introProfile.png</key>
             <dict>
@@ -48,21 +48,6 @@
                 <string>{{8,688},{596,584}}</string>
                 <key>textureRotated</key>
                 <false/>
-            </dict>
-            <key>naveMenu.png</key>
-            <dict>
-                <key>aliases</key>
-                <array/>
-                <key>spriteOffset</key>
-                <string>{0,4}</string>
-                <key>spriteSize</key>
-                <string>{544,392}</string>
-                <key>spriteSourceSize</key>
-                <string>{544,408}</string>
-                <key>textureRect</key>
-                <string>{{612,688},{544,392}}</string>
-                <key>textureRotated</key>
-                <true/>
             </dict>
             <key>nyaLogo.png</key>
             <dict>
@@ -91,9 +76,9 @@
             <key>realTextureFileName</key>
             <string>menu.png</string>
             <key>size</key>
-            <string>{1024,1448}</string>
+            <string>{956,1280}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ddf5f7588d5780e3395b0afb6be97a11:324d7cceb7965bb7e43ee5dd18315d56:d8262aade98c5042ace66a849ab96659$</string>
+            <string>$TexturePacker:SmartUpdate:abef9401160c487ecf944488a6dd4a16:5e372a3118b2f85e04fcc48adaadfedb:d8262aade98c5042ace66a849ab96659$</string>
             <key>textureFileName</key>
             <string>menu.png</string>
         </dict>

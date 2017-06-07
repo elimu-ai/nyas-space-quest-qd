@@ -233,19 +233,6 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">menu/botPerfil.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>29,29,59,59</rect>
-                <key>scale9Paddings</key>
-                <rect>29,29,59,59</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
             <key type="filename">menu/buttonPlay.png</key>
             <key type="filename">menu/buttonPlaySel.png</key>
             <struct type="IndividualSpriteSettings">
@@ -260,16 +247,16 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">menu/naveMenu.png</key>
+            <key type="filename">menu/introProfile.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>136,102,272,204</rect>
+                <rect>175,146,350,291</rect>
                 <key>scale9Paddings</key>
-                <rect>136,102,272,204</rect>
+                <rect>175,146,350,291</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
