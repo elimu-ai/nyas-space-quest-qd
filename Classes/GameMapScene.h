@@ -15,6 +15,7 @@
 #include "Coin.h"
 #include "End.h"
 #include "Tutorial.h"
+#include "InfoStop.h"
 
 #include "androidFix.h"
 
@@ -102,6 +103,7 @@ private:
 	Vector<Coin*> coinVector;
 	//Tip texts
 	Vector<Sprite*> tiptextVector;
+	Vector<InfoStop*> infoStopVector;
 
 	Tutorial * tutorial;
 };

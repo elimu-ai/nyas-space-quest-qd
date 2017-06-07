@@ -85,7 +85,7 @@
   <object height="128" id="314" name="plat2.png" width="1024" x="30080" y="1792" />
   <object height="160" id="315" name="plat3.png" width="256" x="35200" y="2176" />
  </objectgroup>
- <objectgroup name="tips">
+ <objectgroup name="infoStop">
   <object height="120" id="12" name="tipMoon1" width="116" x="3840" y="2048" />
   <object height="120" id="40" name="tipMoon2" width="116" x="6784" y="2048" />
   <object height="120" id="41" name="tipMoon3" width="116" x="19584" y="2048" />
@@ -96,6 +96,7 @@
    <ellipse />
   </object>
  </objectgroup>
+ <objectgroup name="testStop" />
  <objectgroup name="coins">
   <object id="46" x="1030" y="2044">
    <ellipse />
