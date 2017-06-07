@@ -86,8 +86,8 @@ void Menug::setupLogo()
 
 void Menug::setupNave()
 {
-	auto nave = Sprite::createWithSpriteFrameName("naveMenu.png");
-	nave->setPosition(Vec2(origin.x + visibleSize.width / 4, origin.y + visibleSize.height / 2 - 50));
+	auto nave = Sprite::createWithSpriteFrameName("introProfile.png");
+	nave->setPosition(Vec2(origin.x + visibleSize.width / 4 + 25, origin.y + visibleSize.height / 2 - 130));
 	auto moveBy = MoveBy::create(2, Vec2(0, 7));
 	auto moveBack = moveBy->reverse();
 	auto seq1 = Sequence::create(moveBy, moveBack, nullptr);

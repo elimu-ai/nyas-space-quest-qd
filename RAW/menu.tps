@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.4.0</string>
         <key>fileName</key>
-        <string>D:/Developer/Games/Nya/RAW/menu.tps</string>
+        <string>D:/Developer/Games/Nya-QD/RAW/menu.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -233,6 +233,19 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">menu/botPerfil.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>29,29,59,59</rect>
+                <key>scale9Paddings</key>
+                <rect>29,29,59,59</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">menu/buttonPlay.png</key>
             <key type="filename">menu/buttonPlaySel.png</key>
             <struct type="IndividualSpriteSettings">
