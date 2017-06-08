@@ -1,6 +1,7 @@
 #include "InfoStop.h"
 #include "SimpleAudioEngine.h"
 #include "Planet.h"
+#include "LanguageManager.h"
 
 USING_NS_CC;
 using namespace CocosDenshion;
@@ -83,12 +84,12 @@ void InfoStop::update(bool hit)
         
         auto popUp = ScaleTo::create(0.3f, 1);
         allActions.pushBack(popUp);
-        
+        int planetNumber = RandomHelper::random_int(1, 4);
         int i=0;
         while (i < numberLeft)
         {
-            auto planet = Planet::create(1);
-            planet->setScale(0.5f);
+            auto planet = Planet::create(planetNumber);
+            planet->setScale(0.65f);
             planet->setPosition(Vec2(100, 100));
             bgSprite->addChild(planet);
             auto move = MoveBy::create(0.5f, Vec2(0,15*i));
@@ -100,8 +101,8 @@ void InfoStop::update(bool hit)
         i=0;
         while (i < numberRight)
         {
-            auto planet = Planet::create(1);
-            planet->setScale(0.5f);
+            auto planet = Planet::create(planetNumber);
+            planet->setScale(0.65f);
             planet->setPosition(Vec2(300, 90 + 10));
             bgSprite->addChild(planet);
             auto move = MoveBy::create(0.5f, Vec2(0,15*i));
@@ -110,6 +111,16 @@ void InfoStop::update(bool hit)
             i++;
         }
         
+        auto symbolLabel = Label::createWithTTF(">", LanguageManager::getString("font"), 164);
+        if (numberRight > numberLeft)
+            symbolLabel->setString("<");
+        symbolLabel->setAnchorPoint(Vec2(0.5,0.5));
+        bgSprite->addChild(symbolLabel);
+        symbolLabel->setPosition(Vec2(200,170));
+        symbolLabel->setScale(0);
+        auto labelScaleUp = ScaleTo::create(0.5,1);
+        auto targetedLabelAction = TargetedAction::create(symbolLabel, labelScaleUp);
+        allActions.pushBack(targetedLabelAction);
         
         auto * delay = DelayTime::create(1.5);
         allActions.pushBack(delay);
