@@ -484,7 +484,7 @@ void GameMap::parallaxMove()
 void GameMap::writeData()
 {
 	auto ud = UserDefault::getInstance();
-	ud->setIntegerForKey("levelUnlock", 10);
+	//ud->setIntegerForKey("levelUnlock", 10);
 	std::string starsString = "stars" + std::to_string(levelId);
 	std::string tipsString = "numberDisplays" + std::to_string(levelId);
 	if (ud->getFloatForKey(starsString.c_str(), 0.0f) < grabbedCoins / totalCoins * 100)
