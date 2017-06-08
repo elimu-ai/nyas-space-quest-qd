@@ -84,7 +84,7 @@ void InfoStop::update(bool hit)
         
         auto popUp = ScaleTo::create(0.3f, 1);
         allActions.pushBack(popUp);
-        int planetNumber = RandomHelper::random_int(1, 4);
+        int planetNumber = RandomHelper::random_int(0, 3);
         int i=0;
         while (i < numberLeft)
         {
