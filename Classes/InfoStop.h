@@ -7,7 +7,7 @@
 //
 
 #ifndef __akua__InfoStop__
-#define __akua__Tip__
+#define __akua__InfoStop__
 
 #include "BaseObject.h"
 
@@ -27,11 +27,13 @@ private:
 	void setupAudio();
 	void setupSprite();
 	
-	
-	std::string name;
 	bool isMessagevisible;
+    Sprite * bgSprite;
 	Sequence * popUpSeq;
 	Sequence * popDownSeq;
+    
+    int numberLeft;
+    int numberRight;
 };
 
-#endif /* defined(__akua__BitacoraScene__) */
+#endif
