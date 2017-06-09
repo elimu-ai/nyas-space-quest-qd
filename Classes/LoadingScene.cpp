@@ -8,7 +8,7 @@
 
 #include "LoadingScene.h"
 #include "MenugScene.h"
-
+#include "MoonScene.h"
 
 Scene * Loading::createScene(int sceneNumber)
 {
@@ -42,7 +42,7 @@ void Loading::loadLvl(float dt)
 	switch (sceneNumber)
 	{
 	case kNumberIdA:
-		
+		scene = Moon::createScene();
 		break;
 	case kNumberIdB:
 		

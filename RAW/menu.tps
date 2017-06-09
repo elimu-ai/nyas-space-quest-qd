@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.4.0</string>
         <key>fileName</key>
-        <string>D:/Developer/Games/Nya/RAW/menu.tps</string>
+        <string>D:/Developer/Games/Nya-QD/RAW/menu.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -247,16 +247,16 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">menu/naveMenu.png</key>
+            <key type="filename">menu/introProfile.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>136,102,272,204</rect>
+                <rect>175,146,350,291</rect>
                 <key>scale9Paddings</key>
-                <rect>136,102,272,204</rect>
+                <rect>175,146,350,291</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>

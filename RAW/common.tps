@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.4.0</string>
         <key>fileName</key>
-        <string>D:/Developer/Games/Nya/RAW/common.tps</string>
+        <string>D:/Developer/Games/Nya-QD/RAW/common.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">

@@ -15,7 +15,7 @@
                 <key>spriteSourceSize</key>
                 <string>{29,29}</string>
                 <key>textureRect</key>
-                <string>{{505,208},{30,30}}</string>
+                <string>{{211,512},{30,30}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -30,9 +30,9 @@
                 <key>spriteSourceSize</key>
                 <string>{27,31}</string>
                 <key>textureRect</key>
-                <string>{{476,208},{27,31}}</string>
+                <string>{{211,483},{27,31}}</string>
                 <key>textureRotated</key>
-                <false/>
+                <true/>
             </dict>
             <key>coin.png</key>
             <dict>
@@ -45,7 +45,7 @@
                 <key>spriteSourceSize</key>
                 <string>{25,24}</string>
                 <key>textureRect</key>
-                <string>{{510,174},{25,25}}</string>
+                <string>{{211,610},{25,25}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -60,7 +60,7 @@
                 <key>spriteSourceSize</key>
                 <string>{32,32}</string>
                 <key>textureRect</key>
-                <string>{{476,174},{32,32}}</string>
+                <string>{{211,449},{32,32}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -75,9 +75,9 @@
                 <key>spriteSourceSize</key>
                 <string>{170,127}</string>
                 <key>textureRect</key>
-                <string>{{449,2},{170,127}}</string>
+                <string>{{2,626},{170,127}}</string>
                 <key>textureRotated</key>
-                <true/>
+                <false/>
             </dict>
             <key>stars.jpg</key>
             <dict>
@@ -92,7 +92,7 @@
                 <key>textureRect</key>
                 <string>{{2,2},{445,250}}</string>
                 <key>textureRotated</key>
-                <false/>
+                <true/>
             </dict>
             <key>tip.png</key>
             <dict>
@@ -105,7 +105,22 @@
                 <key>spriteSourceSize</key>
                 <string>{25,64}</string>
                 <key>textureRect</key>
-                <string>{{449,174},{25,64}}</string>
+                <string>{{211,544},{25,64}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>tipBg.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{207,175}</string>
+                <key>spriteSourceSize</key>
+                <string>{207,175}</string>
+                <key>textureRect</key>
+                <string>{{2,449},{207,175}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -121,9 +136,9 @@
             <key>realTextureFileName</key>
             <string>common.png</string>
             <key>size</key>
-            <string>{578,254}</string>
+            <string>{254,755}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ab78e226ed962f4abb921f55ac9e0134:b0691e7003cb0e12fd775c3df0c8c97a:d9a61af917d26893cbfb8ffb904e12ee$</string>
+            <string>$TexturePacker:SmartUpdate:cccab0512c2c208fd4d070b6f2a1b55d:98ed95f4020a1327b85095bc6f7b479e:d9a61af917d26893cbfb8ffb904e12ee$</string>
             <key>textureFileName</key>
             <string>common.png</string>
         </dict>

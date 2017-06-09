@@ -15,9 +15,9 @@
                 <key>spriteSourceSize</key>
                 <string>{420,174}</string>
                 <key>textureRect</key>
-                <string>{{560,864},{396,160}}</string>
+                <string>{{788,688},{396,160}}</string>
                 <key>textureRotated</key>
-                <false/>
+                <true/>
             </dict>
             <key>buttonPlaySel.png</key>
             <dict>
@@ -30,22 +30,22 @@
                 <key>spriteSourceSize</key>
                 <string>{420,174}</string>
                 <key>textureRect</key>
-                <string>{{560,688},{404,168}}</string>
+                <string>{{612,688},{404,168}}</string>
                 <key>textureRotated</key>
-                <false/>
+                <true/>
             </dict>
-            <key>naveMenu.png</key>
+            <key>introProfile.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
                 <key>spriteOffset</key>
-                <string>{0,4}</string>
+                <string>{-32,-1}</string>
                 <key>spriteSize</key>
-                <string>{544,392}</string>
+                <string>{596,584}</string>
                 <key>spriteSourceSize</key>
-                <string>{544,408}</string>
+                <string>{700,582}</string>
                 <key>textureRect</key>
-                <string>{{8,688},{544,392}}</string>
+                <string>{{8,688},{596,584}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -76,9 +76,9 @@
             <key>realTextureFileName</key>
             <string>menu.png</string>
             <key>size</key>
-            <string>{972,1088}</string>
+            <string>{956,1280}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:4b66287377b4d1dda05ea0f3b3f0e4c1:58ee99c17af6c2003b600aec71b9ec23:d8262aade98c5042ace66a849ab96659$</string>
+            <string>$TexturePacker:SmartUpdate:abef9401160c487ecf944488a6dd4a16:5e372a3118b2f85e04fcc48adaadfedb:d8262aade98c5042ace66a849ab96659$</string>
             <key>textureFileName</key>
             <string>menu.png</string>
         </dict>

@@ -16,6 +16,7 @@
 #include <sstream>
 #include "LanguageManager.h"
 
+
 USING_NS_CC;
 using namespace CocosDenshion;
 
@@ -187,43 +188,22 @@ void GameMap::loadMap()
 		sprite->setPosition(Vec2(x, y));
 		gameplayNode->addChild(sprite);
 	}
-
+	
 	//load Number Displays
-	auto numberDisplays = tiledMap->getObjectGroup("numberDisplays")->getObjects();
-	if (!numberDisplays.empty())
+	auto infoStops = tiledMap->getObjectGroup("infoStop")->getObjects();
+	if (!infoStops.empty())
 	{
-		for (auto tip : numberDisplays)
+		for (auto infoStop : infoStops)
 		{
-			auto tipMap = tip.asValueMap();
+			auto tipMap = infoStop.asValueMap();
 			int x = tipMap["x"].asInt();
 			int y = tipMap["y"].asInt();
-			/*
-			auto object = NumberDisplay::create(RandomHelper::random_int(1, 10), numberDisplayBG);
+			auto object = InfoStop::create();
 			object->setAnchorPoint(Vec2::ZERO);
 			object->setPosition(Vec2(x, y));
-			numberDisplayVector.pushBack(object);
+			infoStopVector.pushBack(object);
 			gameplayNode->addChild(object);
-			object->setTag(totalTips);*/
-			totalTips++;
-		}
-	}
-
-	//load Number Tests
-	auto numberTests = tiledMap->getObjectGroup("numberTests")->getObjects();
-	if (!numberTests.empty())
-	{
-		for (auto tip : numberTests)
-		{
-			auto tipMap = tip.asValueMap();
-			int x = tipMap["x"].asInt();
-			int y = tipMap["y"].asInt();
-			/*
-			auto object = NumberTest::create(RandomHelper::random_int(1, 10), numberDisplayBG);
-			object->setAnchorPoint(Vec2::ZERO);
-			object->setPosition(Vec2(x, y));
-			numberTestVector.pushBack(object);
-			gameplayNode->addChild(object);
-			object->setTag(totalTips);*/
+			object->setTag(totalTips);
 			totalTips++;
 		}
 	}
@@ -389,16 +369,15 @@ void GameMap::update(float dt)
 	}
 	this->parallaxMove();
 
-	/*
-	//numberDisplays
-	for (NumberDisplay * numberDisplay : numberDisplayVector)
+	//InfoStops
+	for (InfoStop * infoStop : infoStopVector)
 	{
-		if (player->checkIntersect(numberDisplay))
+		if (player->checkIntersect(infoStop))
 		{
-			spawnMarker->setPosition(numberDisplay->getPosition());
+			spawnMarker->setPosition(infoStop->getPosition());
 			player->spawnPoint = spawnMarker->getPosition();
 
-			if (!numberDisplay->consumed)
+			if (!infoStop->consumed)
 			{
 				player->pausePlayer();
 				playerPaused = true;
@@ -408,39 +387,14 @@ void GameMap::update(float dt)
 				playerPaused = false;
 			}
 
-			numberDisplay->update(true);
+			infoStop->update(true);
 		}
 		else
 		{
-			numberDisplay->update(false);
+			infoStop->update(false);
 		}
 	}
-	//numberTest
-	for (NumberTest * numberTest : numberTestVector)
-	{
-		if (player->checkIntersect(numberTest))
-		{
-			spawnMarker->setPosition(numberTest->getPosition());
-			player->spawnPoint = spawnMarker->getPosition();
-
-			if (!numberTest->consumed)
-			{
-				player->pausePlayer();
-				playerPaused = true;
-			}
-			else
-			{
-				playerPaused = false;
-			}
-
-			numberTest->update(true);
-		}
-		else
-		{
-			numberTest->update(false);
-		}
-	}*/
-
+	
 	//coins
 	for (Coin * coin : coinVector)
 	{
@@ -530,7 +484,7 @@ void GameMap::parallaxMove()
 void GameMap::writeData()
 {
 	auto ud = UserDefault::getInstance();
-	ud->setIntegerForKey("levelUnlock", 10);
+	//ud->setIntegerForKey("levelUnlock", 10);
 	std::string starsString = "stars" + std::to_string(levelId);
 	std::string tipsString = "numberDisplays" + std::to_string(levelId);
 	if (ud->getFloatForKey(starsString.c_str(), 0.0f) < grabbedCoins / totalCoins * 100)
