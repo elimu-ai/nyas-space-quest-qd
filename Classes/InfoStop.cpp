@@ -71,6 +71,13 @@ void InfoStop::setupAudio()
 {
 	auto audio = SimpleAudioEngine::getInstance();
 	audio->preloadEffect("sfx/bot.wav");
+	langCode = "en";
+	if (CCApplication::getInstance()->getCurrentLanguage() == LanguageType::SWAHILI)
+		langCode = "sw";
+	for (int i = 0; i <= 10; i++)
+	{
+		audio->preloadEffect(("sfx/" + langCode + "/digit_" + std::to_string(i) + ".wav").c_str());
+	}
 }
 
 void InfoStop::update(bool hit)
@@ -92,11 +99,21 @@ void InfoStop::update(bool hit)
             planet->setScale(0.65f);
             planet->setPosition(Vec2(100, 100));
             bgSprite->addChild(planet);
-            auto move = MoveBy::create(0.5f, Vec2(0,15*i));
+			auto playAudio = CallFunc::create([this, i]() {
+
+				auto audio = SimpleAudioEngine::getInstance();
+				audio->playEffect(("sfx/" + langCode + "/digit_" + std::to_string(i + 1) + ".wav").c_str());
+
+			});
+			allActions.pushBack(playAudio);
+            auto move = MoveBy::create(0.75f, Vec2(0,15*i));
             auto targetedAction = TargetedAction::create(planet, move);
             allActions.pushBack(targetedAction);
             i++;
         }
+
+		auto * delayNumbers = DelayTime::create(1.0f);
+		allActions.pushBack(delayNumbers);
         
         i=0;
         while (i < numberRight)
@@ -105,7 +122,14 @@ void InfoStop::update(bool hit)
             planet->setScale(0.65f);
             planet->setPosition(Vec2(300, 90 + 10));
             bgSprite->addChild(planet);
-            auto move = MoveBy::create(0.5f, Vec2(0,15*i));
+			auto playAudio = CallFunc::create([this, i]() {
+
+				auto audio = SimpleAudioEngine::getInstance();
+				audio->playEffect(("sfx/" + langCode + "/digit_" + std::to_string(i+1) + ".wav").c_str());
+
+			});
+			allActions.pushBack(playAudio);
+            auto move = MoveBy::create(0.75f, Vec2(0,15*i));
             auto targetedAction = TargetedAction::create(planet, move);
             allActions.pushBack(targetedAction);
             i++;

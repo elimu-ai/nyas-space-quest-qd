@@ -34,6 +34,8 @@ private:
     
     int numberLeft;
     int numberRight;
+
+	std::string langCode;
 };
 
 #endif
