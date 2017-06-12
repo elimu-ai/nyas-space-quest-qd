@@ -97,7 +97,7 @@ void InfoStop::update(bool hit)
         {
             auto planet = Planet::create(planetNumber);
             planet->setScale(0.65f);
-            planet->setPosition(Vec2(100, 100));
+            planet->setPosition(Vec2(100, 260));
             bgSprite->addChild(planet);
 			auto playAudio = CallFunc::create([this, i]() {
 
@@ -106,7 +106,7 @@ void InfoStop::update(bool hit)
 
 			});
 			allActions.pushBack(playAudio);
-            auto move = MoveBy::create(0.75f, Vec2(0,15*i));
+            auto move = MoveBy::create(0.75f, Vec2(0,-(160 - 15*i)));
             auto targetedAction = TargetedAction::create(planet, move);
             allActions.pushBack(targetedAction);
             i++;
@@ -120,7 +120,7 @@ void InfoStop::update(bool hit)
         {
             auto planet = Planet::create(planetNumber);
             planet->setScale(0.65f);
-            planet->setPosition(Vec2(300, 90 + 10));
+            planet->setPosition(Vec2(300, 260));
             bgSprite->addChild(planet);
 			auto playAudio = CallFunc::create([this, i]() {
 
@@ -129,7 +129,7 @@ void InfoStop::update(bool hit)
 
 			});
 			allActions.pushBack(playAudio);
-            auto move = MoveBy::create(0.75f, Vec2(0,15*i));
+            auto move = MoveBy::create(0.75f, Vec2(0,-(160 - 15*i)));
             auto targetedAction = TargetedAction::create(planet, move);
             allActions.pushBack(targetedAction);
             i++;
