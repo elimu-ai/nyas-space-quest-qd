@@ -5,4 +5,4 @@ Nya's Space Quest: Quantity Discrimination
 
 ![screenshot_20170609-133621](https://user-images.githubusercontent.com/15718174/26973174-6901eabe-4d15-11e7-9634-b37cd6006b4a.png)
 
-See demo at https://www.youtube.com/watch?v=Mif5IwcYoO0
+See demo at https://www.youtube.com/watch?v=RzpaXyWhVSM
