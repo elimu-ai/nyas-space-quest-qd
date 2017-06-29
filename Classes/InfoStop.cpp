@@ -134,11 +134,15 @@ void InfoStop::update(bool hit)
             i++;
         }
         string greaterOrSmaller = "/is_greater_than.wav";
+        if (RandomHelper::random_int(0,1))
+            greaterOrSmaller = "/is_larger_than.wav";
         auto symbolLabel = Label::createWithTTF(">", LanguageManager::getString("font"), 164);
         if (numberRight > numberLeft)
         {
             symbolLabel->setString("<");
             greaterOrSmaller = "/is_smaller_than.wav";
+            if (RandomHelper::random_int(0,1))
+                greaterOrSmaller = "/is_less_than.wav";
         }
         symbolLabel->setAnchorPoint(Vec2(0.5,0.5));
         bgSprite->addChild(symbolLabel);
