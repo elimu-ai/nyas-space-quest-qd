@@ -1,5 +1,4 @@
-# nyas-space-quest-qd
-Nya's Space Quest: Quantity Discrimination
+# Nya's Space Quest: Quantity Discrimination
 
 ![screenshot_20170622-024957](https://user-images.githubusercontent.com/15718174/27411324-edec40ac-56e4-11e7-8207-1a05c770024d.png)
 
