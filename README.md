@@ -1,6 +1,8 @@
 # Nya's Space Quest: Quantity Discrimination 🕹
 
-This game is a fork of [Nya's Space Quest](https://github.com/elimu-ai/nyas-space-quest) for teaching number identification.
+This game is a fork of [Nya's Space Quest](https://github.com/elimu-ai/nyas-space-quest).
+
+---
 
 Corresponding [EGMA skill](https://github.com/elimu-ai/model/blob/master/src/main/java/ai/elimu/model/v2/enums/content/NumeracySkill.java): `QUANTITY_DISCRIMINATION`
 > Measures children's ability to make judgments about differences by comparing quantities in object groups. This can be done by using numbers or by using objects such as circles.
