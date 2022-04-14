@@ -9,9 +9,9 @@ Corresponding [EGMA skill](https://github.com/elimu-ai/model/blob/master/src/mai
 
 ## Screenshots 📸
 
-<img width="640" src="https://user-images.githubusercontent.com/15718174/27411324-edec40ac-56e4-11e7-8207-1a05c770024d.png)" />
+<img width="640" src="https://user-images.githubusercontent.com/15718174/27411324-edec40ac-56e4-11e7-8207-1a05c770024d.png" />
 
-<img width="640" src="https://user-images.githubusercontent.com/15718174/26973174-6901eabe-4d15-11e7-9634-b37cd6006b4a.png)" />
+<img width="640" src="https://user-images.githubusercontent.com/15718174/26973174-6901eabe-4d15-11e7-9634-b37cd6006b4a.png" />
 
 ## Demo Video 🎥
 
