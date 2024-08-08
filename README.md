@@ -17,7 +17,7 @@ Corresponding [EGMA skill](https://github.com/elimu-ai/model/blob/master/src/mai
 
 ## Demo Video 🎥
 
-[![](https://i.ytimg.com/vi/gGK4imJdJZk/hqdefault.jpg)](https://youtu.be/gGK4imJdJZk)
+<kbd>[![](https://i.ytimg.com/vi/gGK4imJdJZk/hqdefault.jpg)](https://youtu.be/gGK4imJdJZk)</kbd>
 
 ## Installation
 
