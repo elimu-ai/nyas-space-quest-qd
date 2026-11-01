@@ -29,13 +29,13 @@ Corresponding [EGMA skill](https://github.com/elimu-ai/model/blob/master/src/mai
 > Verified setup: Cocos2d-x 3.14.1 (C++) game, built via `proj.android-studio`
 > (Gradle modules `:Nya-qd` = app, `:libcocos2dx` = engine) with JDK 17,
 > Gradle 8.10 (wrapper), Android Gradle Plugin 8.3.0, `compileSdk 34`,
-> NDK `25.2.9519653`, `minSdk 21`. First build takes ~9 min (compiles the
+> NDK `28.2.13676358`, `minSdk 21`. First build takes ~9 min (compiles the
 > Cocos native libs for 2 ABIs); incremental builds are fast.
 
 ### Prerequisites
 
 - Android SDK with platform `android-34` and matching build-tools, plus NDK
-  `25.2.9519653` (pinned via `ndkVersion` in both `build.gradle` files).
+  `28.2.13676358` (pinned via `ndkVersion` in both `build.gradle` files).
 - JDK 17 and `proj.android-studio/local.properties` pointing at your SDK, e.g.
   `sdk.dir=/Users/<you>/Library/Android/sdk`.
 
@@ -76,7 +76,7 @@ adb -s <device> logcat -d | grep -E "FATAL EXCEPTION" # expect no output
 - `proj.android-studio/app/build.gradle`: `namespace`/`applicationId`
   `nya-qd.literacyapp.org` → `org.literacyapp.nya_qd` (the old ID contains `-`,
   illegal in an Android package name), `compileSdk 34`,
-  `ndkVersion 25.2.9519653`, `externalNativeBuild.ndkBuild` wired to
+  `ndkVersion 28.2.13676358`, `externalNativeBuild.ndkBuild` wired to
   `jni/Android.mk`, `compile` → `implementation`; ABI filters
   `armeabi-v7a` + `arm64-v8a`.
 - `proj.android-studio/app/AndroidManifest.xml`: removed legacy `package=`
@@ -93,11 +93,15 @@ adb -s <device> logcat -d | grep -E "FATAL EXCEPTION" # expect no output
   requests).
 - `cocos2d/external/unzip/ioapi.h`: skip the unconditional
   `#define __USE_FILE_OFFSET64` on Android — it hides `fgetpos`/`fsetpos`
-  declarations in NDK 25 headers when targeting API < 24, which breaks
+  declarations in NDK 25+ headers when targeting API < 24, which breaks
   `<cstdio>` (libc++). Game assets are far below the 4 GB this flag serves.
 - ABIs: `armeabi`/`x86`/`x86_64` dropped (Cocos 3.14.1 ships no `x86_64`
   prebuilts, so it can never configure; `armeabi` was removed from modern
   NDKs). Re-add in `abiFilters` + `APP_ABI` if needed.
+- NDK `25.2.9519653` → `28.2.13676358`: NDK 28 links the `arm64-v8a`
+  `libMyGame.so` with 16 KB-aligned `LOAD` segments (`0x4000` instead of
+  `0x1000`), which silences the "This app isn't 16 KB compatible" system
+  dialog on Android 15+ devices with 16 KB page size.
 
 ---
 

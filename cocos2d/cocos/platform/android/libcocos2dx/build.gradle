@@ -3,7 +3,7 @@ apply plugin: 'com.android.library'
 android {
     namespace "org.cocos2dx.lib"
     compileSdk 34
-    ndkVersion "25.2.9519653"
+    ndkVersion "28.2.13676358"
 
     buildFeatures {
         aidl true
