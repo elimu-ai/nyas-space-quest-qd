@@ -28,7 +28,7 @@ Corresponding [EGMA skill](https://github.com/elimu-ai/model/blob/master/src/mai
 
 > Verified setup: Cocos2d-x 3.14.1 (C++) game, built via `proj.android-studio`
 > (Gradle modules `:Nya-qd` = app, `:libcocos2dx` = engine) with JDK 17,
-> Gradle 8.10 (wrapper), Android Gradle Plugin 8.1.4, `compileSdk 34`,
+> Gradle 8.10 (wrapper), Android Gradle Plugin 8.3.0, `compileSdk 34`,
 > NDK `25.2.9519653`, `minSdk 21`. First build takes ~9 min (compiles the
 > Cocos native libs for 2 ABIs); incremental builds are fast.
 
@@ -71,7 +71,7 @@ adb -s <device> logcat -d | grep -E "FATAL EXCEPTION" # expect no output
 
 ### What was changed to modernize the build (vs 2017 config)
 
-- `proj.android-studio/build.gradle`: AGP `1.3.0` → `8.1.4`,
+- `proj.android-studio/build.gradle`: AGP `1.3.0` → `8.3.0`,
   `jcenter()` → `google()` + `mavenCentral()`.
 - `proj.android-studio/app/build.gradle`: `namespace`/`applicationId`
   `nya-qd.literacyapp.org` → `org.literacyapp.nya_qd` (the old ID contains `-`,
