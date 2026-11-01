@@ -46,7 +46,7 @@ cd proj.android-studio
 ./gradlew :Nya-qd:assembleDebug
 ```
 
-APK output: `proj.android-studio/app/build/outputs/apk/debug/Nya-qd-debug.apk`
+APK output: `app/build/outputs/apk/debug/Nya-qd-debug.apk`
 (~29 MB, debug-signed automatically).
 
 Release signing uses the existing mechanism: pass
@@ -57,7 +57,7 @@ and build `:Nya-qd:assembleRelease`.
 
 ```sh
 # Boot an AVD (see GPU note below), then:
-adb -s <device> install -r proj.android-studio/app/build/outputs/apk/debug/Nya-qd-debug.apk
+adb -s <device> install -r app/build/outputs/apk/debug/Nya-qd-debug.apk
 adb -s <device> shell am start -n org.literacyapp.nya_qd/org.cocos2dx.cpp.AppActivity
 adb -s <device> shell pidof org.literacyapp.nya_qd # process alive = no crash
 adb -s <device> exec-out screencap -p > nya-qd.png
