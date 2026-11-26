@@ -7,13 +7,26 @@ $(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/external)
 $(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/cocos)
 $(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/cocos/audio/include)
 
-LOCAL_MODULE := MyGame_shared
+LOCAL_MODULE := MyGame
 
 LOCAL_MODULE_FILENAME := libMyGame
 
 LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../../Classes/AppDelegate.cpp \
-                   ../../../Classes/HelloWorldScene.cpp
+                   ../../../Classes/BaseObject.cpp \
+                   ../../../Classes/Bot.cpp \
+                   ../../../Classes/Coin.cpp \
+                   ../../../Classes/End.cpp \
+                   ../../../Classes/GameMapScene.cpp \
+                   ../../../Classes/InfoStop.cpp \
+                   ../../../Classes/LanguageManager.cpp \
+                   ../../../Classes/LoadingScene.cpp \
+                   ../../../Classes/MenugScene.cpp \
+                   ../../../Classes/Meteor.cpp \
+                   ../../../Classes/MoonScene.cpp \
+                   ../../../Classes/Planet.cpp \
+                   ../../../Classes/Player.cpp \
+                   ../../../Classes/Tutorial.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes
 
