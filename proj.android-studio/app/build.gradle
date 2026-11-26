@@ -1,16 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "org.literacyapp.nya_qd"
+    namespace "ai.elimu.nya_qd"
     compileSdk 34
     ndkVersion "28.2.13676358"
 
     defaultConfig {
-        applicationId "org.literacyapp.nya_qd"
+        applicationId "ai.elimu.nya_qd"
         minSdk 21
         targetSdk 34
-        versionCode 1
-        versionName "1.0"
+        versionCode 2000000
+        versionName "2.0.0"
 
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a'
