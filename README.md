@@ -58,8 +58,8 @@ and build `:Nya-qd:assembleRelease`.
 ```sh
 # Boot an AVD (see GPU note below), then:
 adb -s <device> install -r app/build/outputs/apk/debug/Nya-qd-debug.apk
-adb -s <device> shell am start -n org.literacyapp.nya_qd/org.cocos2dx.cpp.AppActivity
-adb -s <device> shell pidof org.literacyapp.nya_qd # process alive = no crash
+adb -s <device> shell am start -n ai.elimu.nya_qd/org.cocos2dx.cpp.AppActivity
+adb -s <device> shell pidof ai.elimu.nya_qd # process alive = no crash
 adb -s <device> exec-out screencap -p > nya-qd.png
 adb -s <device> logcat -d | grep -E "FATAL EXCEPTION" # expect no output
 ```
@@ -74,7 +74,7 @@ adb -s <device> logcat -d | grep -E "FATAL EXCEPTION" # expect no output
 - `proj.android-studio/build.gradle`: AGP `1.3.0` → `8.3.0`,
   `jcenter()` → `google()` + `mavenCentral()`.
 - `proj.android-studio/app/build.gradle`: `namespace`/`applicationId`
-  `nya-qd.literacyapp.org` → `org.literacyapp.nya_qd` (the old ID contains `-`,
+  `nya-qd.literacyapp.org` → `org.literacyap.nya_qd` (the old ID contains `-`,
   illegal in an Android package name), `compileSdk 34`,
   `ndkVersion 28.2.13676358`, `externalNativeBuild.ndkBuild` wired to
   `jni/Android.mk`, `compile` → `implementation`; ABI filters
